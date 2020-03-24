@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root123
+    username: root
+    url: jdbc:mysql://127.0.0.1:3306/test?userUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+mybatis:
+  type-aliases-package: com.example.domain
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.example: debug
+rsa:
+  key:
+    privateKeyFile: C:\Users\zhe.cui\Desktop\learning\id_rsa_private_pkcs
+    publicKeyFile: C:\Users\zhe.cui\Desktop\learning\id_rsa_public.pub
